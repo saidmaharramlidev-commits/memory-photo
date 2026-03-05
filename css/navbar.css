@@ -69,8 +69,11 @@
 
 @media(max-width:900px) {
     #menuBtn-wrapper {
-        display: block;
-        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        -webkit-tap-highlight-color: transparent;
     }
 
     #navbarEndpoints {

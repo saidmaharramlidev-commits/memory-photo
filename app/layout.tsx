@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../css/homeHero.css"
 import "../css/navbar.css"
+import "../css/homeAbout.css"
+import "../css/animation.css"
 import Provider from "./providers"
+import SmoothScroll from "./SmoothScrool";
 
 
 export const metadata: Metadata = {
@@ -19,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Provider>
-          {children}
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
         </Provider>
       </body>
     </html>
