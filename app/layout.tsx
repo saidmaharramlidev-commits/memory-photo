@@ -4,6 +4,7 @@ import "../css/homeHero.css"
 import "../css/navbar.css"
 import "../css/homeAbout.css"
 import "../css/animation.css"
+import "../css/homeServices.css"
 import Provider from "./providers"
 import SmoothScroll from "./SmoothScrool";
 

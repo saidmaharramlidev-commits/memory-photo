@@ -40,6 +40,11 @@
     transition: 0.5s;
 }
 
+
+.activeLink {
+    color: goldenrod;
+}
+
 .endpoint:hover {
     transform: translateY(-3px);
     color: lightgray;

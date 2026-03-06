@@ -1,0 +1,165 @@
+#mainServices {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+#servicePic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+/* SERVICES CONTAINER */
+
+#services-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* SERVICE CARD */
+
+.service {
+    width: 300px;
+    padding: 40px 30px;
+
+    color: white;
+    text-align: center;
+
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+/* top line decoration */
+
+.service::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: white;
+
+    display: block;
+    margin: 0 auto 20px auto;
+
+    opacity: 0.6;
+}
+
+/* hover effect */
+
+.service:hover {
+    transform: translateY(-12px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* title */
+
+.service h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* description */
+
+.service p {
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+/* subtle hover text change */
+
+.service:hover h2 {
+    letter-spacing: 2px;
+}
+
+
+
+#moreServicesBtn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    padding: 14px 34px;
+
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* hover effect */
+
+#moreServicesBtn:hover {
+    background: white;
+    color: black;
+}
+
+
+@media(max-width:1200px) {
+    #moreServicesBtn {
+        transform: none;
+        top: auto;
+        left: auto;
+
+        right: 50px;
+        bottom: 40px;
+    }
+
+}
+
+@media(max-width:900px) {
+    #services-wrapper {
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media(max-width:800px) {
+    .service {
+        width: 250px;
+        padding: 30px 20px;
+    }
+
+    .service h2 {
+        font-size: 18px;
+    }
+
+    .service p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:600px) {
+
+
+    #mainServices {
+        height: 850px;
+    }
+
+
+}
