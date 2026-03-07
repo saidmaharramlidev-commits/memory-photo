@@ -120,10 +120,6 @@
 }
 
 
-.slideUp {
-    animation: SlideUp 1s backwards;
-    animation-delay: 0.5s;
-}
 
 @media(max-width:1200px) {
     #pic-wrapper::before {
