@@ -8,10 +8,13 @@ import Link from "next/link"
 import P1 from "@/public/wedding.jpg"
 import P2 from "@/public/party.webp"
 import P3 from "@/public/street.jpg"
+import { useRouter } from "next/navigation"
 
 
 
 function HomePortfolio() {
+
+    const router = useRouter()
 
     return (
         <div id="mainPortfolio">
@@ -71,7 +74,7 @@ function HomePortfolio() {
             </div>
 
             <div id="portfolioCta-wrapper">
-                <div id="cta-portfolio">
+                <div id="cta-portfolio" onClick={() => router.push("/portfolio")}>
                     See Portfolio
                 </div>
 

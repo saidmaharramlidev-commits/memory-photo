@@ -5,6 +5,8 @@ import "../css/navbar.css"
 import "../css/homeAbout.css"
 import "../css/animation.css"
 import "../css/homeServices.css"
+import "../css/homeBlog.css"
+import "../css/footer.css"
 import Provider from "./providers"
 import "../css/homePortfolio.css"
 import SmoothScroll from "./SmoothScrool";

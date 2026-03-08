@@ -7,12 +7,14 @@ import HeroPic from "@/public/heroPic.webp"
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 function HomeHero() {
 
 
     const [hover, setHover] = useState<boolean>(false)
+    const router = useRouter()
 
 
 
@@ -29,12 +31,13 @@ function HomeHero() {
             <div id="heroCta"
                 onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
+                onClick={() => router.push("/portfolio")}
 
             >
                 <div>
                     {hover ? <FaPause id="pauseIcon" /> : <FaPlay id="playIcon" />}
                 </div>
-                <span>See Portfolio</span>
+                <span >See Portfolio</span>
 
             </div>
 
