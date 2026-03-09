@@ -9,6 +9,8 @@ import "../css/homeBlog.css"
 import "../css/footer.css"
 import Provider from "./providers"
 import "../css/homePortfolio.css"
+import "../css/aboutPage.css"
+import "../css/detailsHero.css"
 import SmoothScroll from "./SmoothScrool";
 
 

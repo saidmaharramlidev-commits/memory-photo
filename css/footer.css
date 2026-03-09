@@ -188,4 +188,8 @@
         width: 90%;
     }
 
+    #copyrightText {
+        font-size: 0.8rem;
+    }
+
 }
