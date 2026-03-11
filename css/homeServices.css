@@ -13,6 +13,34 @@
     filter: brightness(30%);
 }
 
+
+.headerOfServices {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+
+    text-align: center;
+    transform: translate(-50%);
+    padding-top: 30px;
+}
+
+/* small line under title */
+.headerOfServices::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 /* SERVICES CONTAINER */
 
 #services-wrapper {

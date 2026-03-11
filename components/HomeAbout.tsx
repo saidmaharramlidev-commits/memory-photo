@@ -3,40 +3,8 @@
 
 import Image from "next/image"
 import pic from "@/public/aboutPic2.jpg"
-import { useEffect } from "react";
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-
-
-gsap.registerPlugin(ScrollTrigger)
-
 
 function HomeAbout() {
-
-
-
-    useEffect(() => {
-
-        gsap.from(
-            ".aboutName, .aboutTitle, .aboutLocation, .aboutBio, .infoGrid",
-            {
-                y: 80,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.2,
-                ease: "power3.out",
-
-                scrollTrigger: {
-                    trigger: "#about-wrapper",
-                    start: "top 70%",
-                    end: "top 70%",
-                    toggleActions: "play none none reverse"
-                }
-            }
-        )
-
-
-    }, [])
 
 
 

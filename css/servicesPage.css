@@ -1,0 +1,12 @@
+#allServices-wrapper {
+    width: 100%;
+    height: 1100px;
+    position: relative;
+}
+
+#allServicesImage {
+    width: 100%;
+    height: 100%;
+    filter: brightness(30%);
+    object-fit: cover;
+}

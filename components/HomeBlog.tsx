@@ -8,8 +8,12 @@ import TravelBlog from "@/public/travelBlog.jpg"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { setBlog } from "@/redux/counterSlice"
 
 function HomeBlog() {
+
+    const dispatch = useDispatch()
 
     const router = useRouter()
 
@@ -56,7 +60,10 @@ function HomeBlog() {
             <h1 id="headerOfBlogs">Blogs</h1>
             <div id="blogs-wrapper">
 
-                <div className="blog" >
+                <div className="blog" onClick={() => {
+                    dispatch(setBlog(1))
+                    router.push('/blog')
+                }}>
                     <Image className="blogPic" src={TravelBlog} alt="blogPic" />
 
                     <div className="blogText">
@@ -70,7 +77,10 @@ function HomeBlog() {
                     </div>
                 </div>
 
-                <div className="blog" style={{ animationDelay: "0.4s" }}>
+                <div className="blog" style={{ animationDelay: "0.4s" }} onClick={() => {
+                    dispatch(setBlog(2))
+                    router.push('/blog')
+                }}>
                     <Image className="blogPic" src={WeddingBlog} alt="blogPic" />
 
                     <div className="blogText">
@@ -84,7 +94,10 @@ function HomeBlog() {
                     </div>
                 </div>
 
-                <div className="blog" style={{ animationDelay: "0.8s" }}>
+                <div className="blog" style={{ animationDelay: "0.8s" }} onClick={() => {
+                    dispatch(setBlog(3))
+                    router.push('/blog')
+                }}>
                     <Image className="blogPic" src={PortraitBlog} alt="blogPic" />
 
                     <div className="blogText">
@@ -97,7 +110,10 @@ function HomeBlog() {
                     </div>
                 </div>
 
-                <div className="blog" style={{ animationDelay: "1.2s" }}>
+                <div className="blog" style={{ animationDelay: "1.2s" }} onClick={() => {
+                    dispatch(setBlog(4))
+                    router.push('/blog')
+                }}>
                     <Image className="blogPic" src={StreetBlog} alt="blogPic" />
 
                     <div className="blogText">

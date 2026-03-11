@@ -1,6 +1,6 @@
 "use client"
 
-import { setNavbarOpen } from "@/redux/counterSlice";
+import { setBlog, setNavbarOpen } from "@/redux/counterSlice";
 import { RootState } from "@/redux/store";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
@@ -38,6 +38,7 @@ function Navbar() {
                         key={link.href}
                         href={link.href}
                         className={`endpoint ${pathname === link.href ? 'activeLink' : ''}`}
+                        onClick={() => dispatch(setBlog(0))}
                     >
                         {link.name}
                     </Link>

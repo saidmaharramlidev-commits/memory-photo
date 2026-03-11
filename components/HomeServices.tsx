@@ -54,6 +54,7 @@ function HomeServices() {
     return (
         <div id="mainServices">
             <Image id="servicePic" src={Pic} alt="Picture" />
+            <h1 className="headerOfServices">Services</h1>
 
             <div id="services-wrapper">
 

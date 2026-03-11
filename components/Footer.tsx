@@ -67,11 +67,11 @@ function Footer() {
 
             <div className="endpoints">
                 <h1>Endpoints</h1>
-                <Link href={"#"} className="endpointLink">Home</Link>
-                <Link href={"#"} className="endpointLink">About</Link>
-                <Link href={"#"} className="endpointLink">Services</Link>
-                <Link href={"#"} className="endpointLink">Portfolio</Link>
-                <Link href={"#"} className="endpointLink">Home</Link>
+                <Link href={"/"} className="endpointLink">Home</Link>
+                <Link href={"/about"} className="endpointLink">About</Link>
+                <Link href={"/services"} className="endpointLink">Services</Link>
+                <Link href={"/portfolio"} className="endpointLink">Portfolio</Link>
+                <Link href={"/blog"} className="endpointLink">Blog</Link>
 
 
             </div>

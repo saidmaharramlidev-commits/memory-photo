@@ -11,6 +11,8 @@ import Provider from "./providers"
 import "../css/homePortfolio.css"
 import "../css/aboutPage.css"
 import "../css/detailsHero.css"
+import "../css/servicesPage.css"
+import '../css/blogPage.css'
 import SmoothScroll from "./SmoothScrool";
 
 
