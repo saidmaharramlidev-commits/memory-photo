@@ -3,7 +3,7 @@
 import { setBlog, setNavbarOpen } from "@/redux/counterSlice";
 import { RootState } from "@/redux/store";
 import Link from "next/link"
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -15,6 +15,7 @@ function Navbar() {
     const { isNavbarOpen } = useSelector((state: RootState) => state.counter)
 
     const pathname = usePathname()
+    const router = useRouter()
 
     const links = [
         { name: "Home", href: "/" },
@@ -29,7 +30,7 @@ function Navbar() {
 
     return (
         <div id="mainNavbar">
-            <div id="navbarText">
+            <div id="navbarText" onClick={() => router.push('/')}>
                 Photographer
             </div>
             <div id="navbarEndpoints" className={isNavbarOpen ? "openedNavbar" : ''}>

@@ -13,6 +13,8 @@ import "../css/aboutPage.css"
 import "../css/detailsHero.css"
 import "../css/servicesPage.css"
 import '../css/blogPage.css'
+import "../css/portfolioPage.css"
+import "../css/contactPage.css"
 import SmoothScroll from "./SmoothScrool";
 
 

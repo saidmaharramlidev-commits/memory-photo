@@ -191,6 +191,15 @@
 
     .portfolioCard {
         width: 55%;
+        height: 400px;
+    }
+
+    .portfolioCategory {
+        font-size: 0.7rem;
+    }
+
+    .portfolioTitle {
+        font-size: 1.3rem;
     }
 
 
@@ -202,6 +211,7 @@
 
     .portfolioCard {
         width: 65%;
+        height: 350px;
     }
 
 

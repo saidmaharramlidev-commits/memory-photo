@@ -1,0 +1,99 @@
+#containerContact {
+    width: 90%;
+    justify-self: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+#headersContact {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#headersContact h1,
+h4 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#formContact-wrapper {
+    width: 55%;
+    min-height: 500px;
+    background-color: #121212;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.field {
+    width: 90%;
+}
+
+
+
+#contactSubmitCta {
+    margin-top: 10px;
+    width: 70%;
+    height: 50px;
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+#location-wrapper {
+
+    width: 100%;
+    height: 300px;
+    padding-bottom: 50px;
+}
+
+
+@media(max-width:900px) {
+
+    #formContact-wrapper {
+        width: 75%;
+    }
+
+}
+
+@media(max-width:700px) {
+    #headersContact {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    #formContact-wrapper {
+        width: 95%;
+    }
+
+    #headersContact {
+        width: 90%;
+    }
+
+    #contactSubmitCta {
+        height: 45px;
+    }
+
+}

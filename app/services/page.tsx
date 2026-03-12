@@ -9,10 +9,10 @@ function Services() {
         <div id="mainServicesPage">
             <Navbar />
             <DetailsHero header="Services" url="Home > Services" />
-            <div id="allServices-wrapper">
+            <div id="allServicesDetails-wrapper">
                 <Image id="allServicesImage" src={Pic} alt="Picture" />
 
-                <div id="services-wrapper">
+                <div id="servicesDetails-wrapper">
 
                     <div className="service">
                         <h2>Wedding Photography</h2>
