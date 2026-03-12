@@ -13,7 +13,13 @@ import Navbar from "@/components/Navbar"
 import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { TbBrandFiverr } from "react-icons/tb";
 import { useState } from "react";
+
+
 
 
 const theme = createTheme({
@@ -96,6 +102,22 @@ function Contact() {
                 <div id="headersContact">
                     <h1>Want to work with me?</h1>
                     <h4>If you’re interested in working together or want to book a session, send a message and I’ll get back to you as soon as possible</h4>
+
+                    <div id="social-media-wrapper">
+                        <div className='contactSocialMedia'>
+                            <a href="#"><InstagramIcon className='iconContact' /></a>
+                        </div>
+                        <div className='contactSocialMedia'>
+                            <a href="#"><WhatsAppIcon className='iconContact' /></a>
+                        </div>
+                        <div className='contactSocialMedia'>
+                            <a href="#"><FacebookIcon className='iconContact' /></a>
+                        </div>
+                        <div className='contactSocialMedia' style={{ fontSize: "1.5rem" }}>
+                            <a href="#"><TbBrandFiverr className='iconContact' /></a>
+                        </div>
+
+                    </div>
 
                 </div>
 

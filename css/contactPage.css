@@ -16,6 +16,33 @@
     width: 60%;
 }
 
+#social-media-wrapper {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.contactSocialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    padding: 10px;
+    background-color: #1B1B20;
+    border-radius: 5px;
+}
+
+
+
+.iconContact {
+    color: white;
+}
+
 #headersContact h1,
 h4 {
     color: white;
@@ -94,6 +121,11 @@ h4 {
 
     #contactSubmitCta {
         height: 45px;
+    }
+
+    .contactSocialMedia {
+        width: 25px;
+        height: 25px;
     }
 
 }
