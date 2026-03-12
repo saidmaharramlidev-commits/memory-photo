@@ -7,7 +7,6 @@ import PortraitBlog from "@/public/portraitBlog.jpeg"
 import TravelBlog from "@/public/travelBlog.jpg"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
-import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { setBlog } from "@/redux/counterSlice"
 
@@ -17,38 +16,7 @@ function HomeBlog() {
 
     const router = useRouter()
 
-    useEffect(() => {
-        const blogs = document.getElementsByClassName("blog");
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("fadeUp");
-                }
-            });
-        });
-
-        Array.from(blogs).forEach((blog) => observer.observe(blog));
-
-        return () => observer.disconnect();
-    }, []);
-
-
-    useEffect(() => {
-        const cta = document.getElementById("blog-cta-wrapper");
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("fade");
-                }
-            });
-        });
-
-        if (cta) observer.observe(cta);
-
-        return () => observer.disconnect();
-    }, []);
 
 
 

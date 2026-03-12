@@ -202,6 +202,11 @@
         font-size: 1.3rem;
     }
 
+    #mainPortfolio {
+        height: 1530px;
+    }
+
+
 
 
 }
@@ -212,6 +217,10 @@
     .portfolioCard {
         width: 65%;
         height: 350px;
+    }
+
+    #mainPortfolio {
+        height: 1360px;
     }
 
 

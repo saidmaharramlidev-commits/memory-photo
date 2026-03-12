@@ -4,42 +4,9 @@
 import Pic from "@/public/servicePic.jpg"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect } from "react"
 
 
 function HomeServices() {
-
-    useEffect(() => {
-        const services = document.getElementsByClassName("service");
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("fadeUp");
-                }
-            });
-        });
-
-        Array.from(services).forEach((service) => observer.observe(service));
-
-        return () => observer.disconnect();
-    }, []);
-
-    useEffect(() => {
-        const cta = document.getElementById("moreServicesBtn");
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("fade");
-                }
-            });
-        });
-
-        if (cta) observer.observe(cta);
-
-        return () => observer.disconnect();
-    }, []);
 
 
 
