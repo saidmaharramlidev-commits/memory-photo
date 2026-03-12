@@ -78,13 +78,6 @@ function Services() {
                         </p>
                     </div>
 
-                    <div className="service">
-                        <h2>Photo Editing & Retouching</h2>
-                        <p>
-                            Advanced color correction, retouching, and post-production
-                            to ensure every image looks polished and professional.
-                        </p>
-                    </div>
 
 
 
